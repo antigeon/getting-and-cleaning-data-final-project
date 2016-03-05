@@ -2,10 +2,15 @@
 
 This code book summarizes the resulting data fields in `average_data.txt`.
 
-## Identifiersa
+# Variables
 
-* `subject` - The ID of the test subject
-* `activity` - The type of activity performed when the corresponding measurements were taken
+* `train`, `trainActivities`, `trainSubjects`, `test`, `testActivities` and `testSubjects` contain the data from the downloaded files.
+* `all`, `Activities` and `Subjects` merge the previous datasets to further analysis.
+* `features` contains the correct names for the `all` dataset, which are applied to the column names stored in 
+* `index_features`, a numeric vector used to extract the desired data from  `featrues`. `useful_features` is the result
+* `all` merges `Activities`, `all` and `Subjects` in a big dataset.
+* `index_data` a tbl we use `group_by` to form Groups with `subject` and `activity`
+* Finally, `tidy` contains the relevant averages which will be later stored in a `averages_data.txt` file. 
 
 ## Measurements
 
